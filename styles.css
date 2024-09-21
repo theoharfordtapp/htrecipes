@@ -1,0 +1,106 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back {
+    position: fixed;
+    top: 3vmin;
+    left: 3vmin;
+    background: rgb(255, 246, 232);
+    border: none;
+    border-radius: 10px;
+    transition: 0.6s;
+    cursor: pointer;
+    padding: 1.4vmin 2.8vmin;
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.ingredients {
+    background-color: rgb(255, 246, 232);
+    border-radius: 10px;
+    padding: 0 3vmin 0 0.8vmin;
+    margin: 2vmin;
+}
+.ingredients h3 {
+    padding-left: 3vmin;
+}
+
+.method {
+    background-color: rgb(255, 242, 232);
+    border-radius: 10px;
+    padding: 0 3vmin 0 0.8vmin;
+    margin: 2vmin;
+}
+.method h3 {
+    padding-left: 3vmin;
+}
+
+.cook {
+    background-color: rgb(255, 236, 232);
+    border-radius: 10px;
+    padding: 0 3vmin 2.4vmin;
+    margin: 2vmin;
+}
+
+.back:hover {
+    background-color: rgb(255, 238, 214);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.recipe-card {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 40vmin;
+    height: 54vmin;
+    border-radius: 10px;
+    background-color: rgb(255, 246, 232);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    background-color: rgb(255, 238, 214);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    font-size: 1em;
+    margin: 1vmin 2vmin;
+}
+
+.recipe-card small {
+    color: gray;
+    margin: 2vmin;
+}
+
+@media only screen and (min-width: 800px) {
+    .recipe-card {
+        width: 24vmin;
+        height: 34vmin;
+    }
+    .recipe-card small {
+        font-size: 1em;
+    }
+}
